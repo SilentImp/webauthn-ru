@@ -1,0 +1,10 @@
+html timer-countdown {
+  display: none;
+}
+
+html timer-countdown[show-in-list],
+html.fullscreen timer-countdown {
+  position: fixed;
+  display: block;
+  z-index: 2;
+}
