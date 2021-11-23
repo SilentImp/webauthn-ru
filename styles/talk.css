@@ -390,10 +390,10 @@
 }
 
 .illustration--scream .cloud {
-  font-size: 54px;
+  font-size: 40px;
   top: 0;
-  left: 50px;
-  right: 50px;
+  left: 45px;
+  right: 45px;
   width: auto;
   max-width: auto;
 }
@@ -472,21 +472,21 @@ h2.isloggedin-title {
   display: none;
 }
 
-.client:before {
-  content: "Клиент";
-  display: block;
-  position: absolute;
-  right: 5%;
-  top: 0;
-  background-color: darkorange;
-  color: white;
-  padding: 24px;
-  font-size: 24px;
-}
+// .client:before {
+//   content: "Клиент";
+//   display: block;
+//   position: absolute;
+//   right: 5%;
+//   top: 0;
+//   background-color: darkorange;
+//   color: white;
+//   padding: 24px;
+//   font-size: 24px;
+// }
 
-html[lang="en"] .client:before {
-  content: "Client";
-}
+// html[lang="en"] .client:before {
+//   content: "Client";
+// }
 
 .server:before {
   content: "Сервер";
@@ -502,6 +502,10 @@ html[lang="en"] .client:before {
 
 html[lang="en"] .server:before {
   content: "Server";
+}
+
+.illustration--cover {
+  background-image: url(../images/cover.svg);
 }
 
 .illustration--demotime {
