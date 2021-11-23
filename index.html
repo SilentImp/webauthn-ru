@@ -1369,7 +1369,7 @@ navigator.credentials.store(credential);</code></pre>
 
       <li class="slide">
         <figure class="content centred no-padding">
-          <pre data-code="32"><code class="language-js">(async () => {
+          <pre data-code="28"><code class="language-js">(async () => {
   // Запускаем только для анонимов
   if (window?.PasswordCredential) {
     const credential =
@@ -1605,7 +1605,7 @@ navigator.credentials.store(credential);</code></pre>
 
       <li class="slide">
         <figure class="content centred no-padding">
-          <pre data-code="42"><code class="language-js">if ('OTPCredential' in window) {
+          <pre data-code="38"><code class="language-js">if ('OTPCredential' in window) {
   const { code, type } = await
     navigator.credentials.get({
       otp: { transport: ['sms'] }
@@ -1901,7 +1901,7 @@ navigator.checkLoginState</code></pre>
 
       <li class="slide">
         <figure class="content centred no-padding client">
-          <pre data-code="28"><code class="language-js">const data = new FormData(form);
+          <pre data-code="26"><code class="language-js">const data = new FormData(form);
 const response = await fetch(
   '/challenge/register',
   {
@@ -2083,7 +2083,7 @@ options.user = {
 
       <li class="slide">
         <figure class="content centred no-padding client">
-          <pre data-code="30"><code class="language-js">options.user.id = toBuffer(options.user.id);
+          <pre data-code="28"><code class="language-js">options.user.id = toBuffer(options.user.id);
 options.challenge = toBuffer(options.challenge);
 
 const credential = await navigator.credentials
@@ -2164,14 +2164,14 @@ const credential = await navigator.credentials
 
       <li class="slide">
         <figure class="content centred no-padding client">
-          <pre data-code="28"><code class="language-js">const clientDataJSON = toBase64(clientDataBuffer);
+          <pre data-code="26"><code class="language-js">const clientDataJSON = toBase64(clientDataBuffer);
 const attestationObject = toBase64(attestationBuffer);</code></pre>
         </figure>
       </li>
 
       <li class="slide">
         <figure class="content centred no-padding client">
-          <pre data-code="45"><code class="language-js">const attestation = {
+          <pre data-code="42"><code class="language-js">const attestation = {
   id,
   type,
   response: {
@@ -2391,7 +2391,7 @@ options.allowCredentials = [{
 
       <li class="slide">
         <figure class="content centred no-padding client">
-          <pre data-code="32"><code class="language-js">const {
+          <pre data-code="28"><code class="language-js">const {
   id,
   type,
   response: {
